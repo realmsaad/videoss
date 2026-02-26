@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  text-align: center;
+ 
+  background: linear-gradient(147deg, #f6b323 0%, #f23b26 74%);
+}
+
+.container{
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+
+.pagination{
+  display: flex;
+  list-style: none;
+}
+
+.pagination li{
+  flex: 1;
+  margin: 0 5px;
+  background: #f23b26; 
+  border-radius: 3px;
+}
+
+.pagination li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination li.icon{
+  background: none;
+}
+
+.pagination li.icon a{
+  width: 110px;
+  background: #f23b26;
+  border-radius: 3px;
+}
+
+.pagination li.icon:first-child span{
+  padding-right: 8px;
+}
+
+.pagination li.icon:last-child span{
+  padding-left: 8px;
+}
+
+.pagination li:hover a{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pagination li a:active{
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
